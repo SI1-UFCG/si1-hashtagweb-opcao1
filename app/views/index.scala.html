@@ -1,0 +1,14 @@
+@(mensagem : String)(jogo: Hashtag)
+
+<h1>Hashtag!</h1>
+
+<h2>@mensagem</h2>
+
+Na vez: @jogo.getJogadorNaVez()<br><br> 
+
+<form action = "/jogada" method = "post">
+	<input type = "text" name = "x" required />
+	<input type = "text" name = "y" required />
+	
+	<input type = "submit"/>
+</form>
